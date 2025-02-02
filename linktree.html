@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Linktree</title>
+  <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
+  <link rel="icon" type="image/jpg" href="https://files.catbox.moe/m5kdph.jpg">
+  <style>
+    /* Reset CSS */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #f9f9f9, #e0e0e0);
+      color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .container {
+      background: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+      width: 100%;
+      max-width: 400px;
+      text-align: center;
+    }
+
+    .profile-img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      margin-bottom: 15px;
+      border: 3px solid #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      font-size: 24px;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    p {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 20px;
+    }
+
+    .links .link {
+      display: flex;
+      align-items: center;
+      background: rgba(255, 255, 255, 0.9);
+      color: #333;
+      text-decoration: none;
+      padding: 15px;
+      border-radius: 15px;
+      margin-bottom: 15px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .links .link:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .links .link .emoji {
+      font-size: 20px;
+      margin-right: 15px;
+    }
+
+    .links .link .text {
+      flex: 1;
+      text-align: left;
+      font-size: 16px;
+      font-weight: 500;
+    }
+
+    .footer {
+      margin-top: 20px;
+      font-size: 12px;
+      color: #888;
+    }
+
+    /* Animasi Background */
+    @keyframes gradientBackground {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    body {
+      background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #a1c4fd, #c2e9fb);
+      background-size: 400% 400%;
+      animation: gradientBackground 15s ease infinite;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 480px) {
+      .profile-img {
+        width: 100px;
+        height: 100px;
+      }
+
+      h1 {
+        font-size: 20px;
+      }
+
+      p {
+        font-size: 12px;
+      }
+
+      .links .link {
+        padding: 12px;
+        font-size: 14px;
+      }
+
+      .links .link .emoji {
+        font-size: 18px;
+        margin-right: 10px;
+      }
+
+      .links .link .text {
+        font-size: 14px;
+      }
+
+      .footer {
+        font-size: 10px;
+      }
+    }
+  </style>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <!-- Profil -->
+    <div class="profile">
+      <img src="https://files.catbox.moe/m5kdph.jpg" alt="Foto Profil" class="profile-img">
+      <h1>XERON XD</h1>
+      <p>My Linktree Website.</p>
+    </div>
+
+    <!-- Daftar Link -->
+    <div class="links">
+      <a href="https://saweria.co/xeronxd" target="_blank" class="link">
+        <span class="emoji">💳</span>
+        <span class="text">Donate</span>
+      </a>
+      <a href="https://wa.me/6281371748626" target="_blank" class="link">
+        <span class="emoji"><i class="ph-fill ph-whatsapp-logo"></i></span>
+        <span class="teks">Contact 1</span>
+      </a>
+      <a href="https://wa.me/6287897093159" target="_blank" class="link">
+        <span class="emoji"><i class="ph-fill ph-whatsapp-logo"></i></span>
+        <span class="teks">Contact 2</span>
+      </a>
+      <a href="https://chat.whatsaap.com/Hq5pc6r68BKFcUgJLg37gU" target="_blank" class="link">
+        <span class="emoji"><i class="ph-fill ph-whatsapp-logo"></i></span>
+        <span class="text">GB UTAMA XERON XD</span>
+      </a>
+      <a href="mailto:rifqy7732@gmail.com" target="_blank" class="link">
+        <span class="emoji">📧</span>
+        <span class="text">Email</span>
+      </a>
+    </div>
+
+    <!-- bagian ini ganti pake nama lu-->
+    <div class="footer">
+      <p>&copy; XERON XD</p>
+    </div>
+  </div>
+</body>
+</html>
